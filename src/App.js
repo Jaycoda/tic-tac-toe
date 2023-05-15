@@ -1,23 +1,36 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import { useState } from "react";
+import Sqaure from "./Components/Sqaure";
 
 function App() {
+  const [board, setboard] = useState(["", "", "", "", "", "", "", "", ""]);
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className="board">
+        <div className="row">
+          <Sqaure
+            val={board[0]}
+            chooseSqaure={() => {
+              alert(0);
+            }}
+          />
+          <Sqaure
+            val={board[1]}
+            chooseSqaure={() => {
+              alert(1);
+            }}
+          />
+          <Sqaure
+            val={board[2]}
+            chooseSqaure={() => {
+              alert(2);
+            }}
+          />
+        </div>
+        <div className="row"></div>
+        <div className="row"></div>
+      </div>
     </div>
   );
 }
