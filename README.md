@@ -1,6 +1,6 @@
 # Getting Started with Create React App
 
-Tik Tac Tow
+Tik Tac Toe
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
